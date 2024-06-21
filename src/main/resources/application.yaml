@@ -1,0 +1,19 @@
+spring:
+  application:
+    name: baaksa
+  data:
+    mongodb:
+      uri: ${MONGODB_URI}
+
+# Server configuration
+server:
+  port: ${PORT}
+  jwt:
+    secret: ${JWT_SECRET_KEY}
+
+# Logging configuration
+logging:
+  level:
+    root: INFO
+    org.springframework.web: DEBUG
+
